@@ -1,4 +1,4 @@
-# Backpropagation
+# Backpropagation with Iris dataset
 The file `main.py` has all the code. `Iris.data` dataset: **https://archive.ics.uci.edu/ml/machine-learning-databases/iris/**   
 Outputs:  
 `1.0.0` - _Iris-setosa_  
