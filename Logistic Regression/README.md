@@ -1,5 +1,9 @@
 # Logistic Regression
-#### To do:
+## In
+Dataset in this repository.
+## Out
+Accuracy of the trained neural network.
+#### Tasks:
 1. Load dataset as csv file;
 2. Process it;
 3. Create training and testing set;
