@@ -14,6 +14,7 @@ y = y/100
 X = X/np.amax(X, axis=0)
 Y = Y/100
 
+# class Neural Network
 class NN(object):
     def __init__(self):
         #inputs, outputs, neurons
@@ -26,6 +27,7 @@ class NN(object):
         self.w1 = np.random.randn(self.inputSize, self.hiddenSize)
         self.w2 = np.random.randn(self.hiddenSize, self.outSize)
 
+    #one epoch step forward
     def moveForward(self, x):
         self.z1 = np.dot(x, self.w1)
         self.z2 = self.activation(self.z1)
@@ -33,13 +35,13 @@ class NN(object):
 
         out = self.activation(self.z3)
         return out
-
+    #activation func
     def activation(self, num):
         if (self.deriv):
             return num*(1-num)
 
         return 1/(1+np.exp(-num))
-
+    #backpropogation func
     def backward(self, x, y, out):
         self.deriv = True
         self.backError = y - out
@@ -53,26 +55,29 @@ class NN(object):
 
         self.deriv = False
 
+    #train func
     def train(self, x, y):
         out = self.moveForward(x)
         self.backward(x,y,out)
-
+    #test func
     def predict(self, X):
         out = self.moveForward(X)
         return out
 
+#create class NS
 NS = NN()
 
+#train for 1000 cycles
 for i in range(1000):
     NS.train(x,y)
-print("------------------Training------------------")
-print("")
-print("Input: " + str(x))
-print("")
-print("True output: " + str(y))
-print("")
-res1 = NS.moveForward(x)
-print("Predicted output: " + str(res1))
+    print(f"------------------Training number {i}------------------")
+    print("")
+    print("Input: " + str(x))
+    print("")
+    print("True output: " + str(y))
+    print("")
+    res1 = NS.moveForward(x)
+    print("Predicted output: " + str(res1))
 
 print("------------------Predicting------------------")
 print("")
