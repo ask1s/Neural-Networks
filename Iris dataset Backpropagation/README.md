@@ -1,6 +1,8 @@
 # Backpropagation with Iris dataset
-The file `main.py` has all the code. `Iris.data` dataset: **https://archive.ics.uci.edu/ml/machine-learning-databases/iris/**   
-Outputs:  
+## In
+`Iris.data` dataset: **https://archive.ics.uci.edu/ml/machine-learning-databases/iris/**   
+## Out
+Predicted classification.  
 `1.0.0` - _Iris-setosa_  
 `0.1.0` - _Iris-versicolor_  
 `0.0.1` - _Iris-verginica_
