@@ -6,7 +6,7 @@ Predicted classification.
 `1.0.0` - _Iris-setosa_  
 `0.1.0` - _Iris-versicolor_  
 `0.0.1` - _Iris-verginica_
-### To do:
+### Tasks:
 1. Define neural network class;
 2. Define input values: in_nodes, hidden_nodes and out_nodes, also learning rate;
 3. Define random weights;
