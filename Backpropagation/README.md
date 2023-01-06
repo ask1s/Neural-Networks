@@ -1,7 +1,8 @@
 # Backpropagation
-The file "main.py" has all the code.  
+## In
 We have many groups at the school, in each group a certain number of students slept before the exam, others studied all night.   
-And we take the average result of the estimates in the group as the result that the neural network should predict using Backpropagation.
+## Out
+We take the average result of the estimates in the group as the result that the neural network should predict using Backpropagation.
 ### To do:
 1. Create dataset for training;
 2. Create dataset for testing;
